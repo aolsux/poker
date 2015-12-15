@@ -58,11 +58,13 @@ class MoneyType(PokerEnum):
 
 
 class Action(PokerEnum):
+    BLIND = 'blind', 'pays blind'
     BET = 'bet', 'bets'
     RAISE = 'raise', 'raises',
     CHECK = 'check', 'checks'
     FOLD = 'fold', 'folded', 'folds'
     CALL = 'call', 'calls'
+    # TODO i think those should be removed
     RETURN = 'return', 'returned', 'uncalled'
     WIN = 'win', 'won', 'collected'
     SHOW = 'show',
